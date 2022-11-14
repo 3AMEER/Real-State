@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- links Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- link Icon -->
+    <link rel="shortcut icon" href="./img/HouseIcon.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;700;800&family=Cairo:wght@300;700;800&family=Changa:wght@200;300;700;800&family=Ibarra+Real+Nova&family=Nunito:wght@300&family=Oswald:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REIS</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="#">ألرئيسيه</a>
+            <a href="#Projects">المشاريع</a>
+            <a href="#gallery">معرض الصور</a>
+            <a href="#search">من نحن</a>
+            <a href="#search">تواصل معنا</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Search here...">
+            <label for="search-box"  class="fas fa-search"></label>
+        </div>
+    </header>
+    <!-- Start Landing -->
+    <div class="landing">
+        <h1>ابحث عن منزل أحلامك</h1>
+        <p>فى مكان واحد يمكن ان تجد منزل احلامك و بى الشكل الذى تريد وبدون اى مشاكل</p>
+
+        <div class="container">
+            <div class="content">
+                <h5>موقعك</h5>
+                <div class="more">
+                    <p>اختر مدينتك</p>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+            </div>
+            <div class="content">
+                <h5>نوع الملكية</h5>
+                <div class="more">
+                    <p>حدد نوع الملكية</p>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+            </div>
+            <div class="content">
+                <h5>نطاق الإيجار</h5>
+                <div class="more">
+                    <p>حدد نطاق الإيجار</p>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+            </div>
+            <div class="content">
+                <div class="btn">
+                    <a href="#" id="btn-search">أبحث</a>
+                </div>
+            </div>
+        </div>
+        <!-- Box Search In Landing Page -->
+        <div class="box-search">
+            <i class="fa-solid fa-xmark exit"></i>
+            <div class="img"><img src="img/logo.png" alt=""></div>
+            <form action="">
+                <input type="search" name="" id="" placeholder="Search..">
+                <i class="fas fa-search"></i>
+            </form>
+        </div>
+        <style>
+            .box-search{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+                position: absolute;
+                top: 90px;
+                width: 80%;
+                height: 80%;
+                border-radius: 5px;
+                backdrop-filter: blur(10px);
+                background-color: rgba(255, 255, 255, 0.162);
+                z-index: 3000;
+            }
+            .box-search > .exit{
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            .box-search > .exit:hover{
+                color: red;
+            }
+            .box-search .img{
+                width: 200px;
+                height: 200px;
+            }
+            .box-search .img img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            form{
+                position: relative;
+                top: -90px;
+                width: 70%;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+            .box-search input{
+                outline: none;
+                padding: 10px;
+                width: 100%;
+                border-radius: 3px;
+                border: 2px solid #4A60A1;
+            }
+            .box-search i{
+                padding: 12px;
+                color: #ffffff;
+                background-color: #4A60A1;
+            }
+            @media (max-width: 430px) {
+                .box-search{
+                    width: 95%;
+                }
+                form{
+                    width: 90%;
+                }
+            }
+        </style>
+    </div>
+    <!-- Start Real  -->
+    <section class="real">
+        <h1>العقارات حسب المنطقة</h1>
+        <p>فى مكان واحد يمكن ان تجد منزل احلامك و بى الشكل الذى تريد وبدون اى مشاكل</p>
+        <div class="container">
+            <div class="box one">
+                <div class="img">
+                    <img src="img/real-one.avif" alt="">
+                </div>
+                <div class="content">
+                    <h2>Washington</h2>
+                    <p>25 listings</p>
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="bttn">
+                    <a href="#">View Detils</a>
+                </div>
+            </div>
+            <div class="box tow">
+                <div class="img">
+                    <img src="img/real-tow.avif" alt="">
+                </div>
+                <div class="content">
+                    <h2>Frankline</h2>
+                    <p>25 listings</p>
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="bttn">
+                    <a href="#">View Detils</a>
+                </div>
+            </div>
+            <div class="box three">
+                <div class="img">
+                    <img src="img/real-three.avif" alt="">
+                </div>
+                <div class="content">
+                    <h2>Clinton</h2>
+                    <p>25 listings</p>
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="bttn">
+                    <a href="#">View Detils</a>
+                </div>
+            </div>
+            <div class="box four">
+                <div class="img">
+                    <img src="img/Landing-img.avif" alt="">
+                </div>
+                <div class="content">
+                    <h2>Washington</h2>
+                    <p>25 listings</p>
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="bttn">
+                    <a href="#">View Detils</a>
+                </div>
+            </div>
+            <div class="box five">
+                <div class="img">
+                    <img src="img/real-five.avif" alt="">
+                </div>
+                <div class="content">
+                    <h2>Washington</h2>
+                    <p>25 listings</p>
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="bttn">
+                    <a href="#">View Detils</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Start Chose  -->
+    <section class="do">
+        <h1>أختر ما تريد ان تفعله</h1>
+        <p>يمكنك من خلال هذا أن تبيع او تشترى و الكثير من الخيارات استمتع بها</p>
+        <div class="container">
+            <div class="box active">
+                <i class="fa-solid fa-one"></i>
+                <h3>بيع منزل</h3>
+                <p>يمكنك من هنا ان  تعرض منزلك للبيع</p>
+                <a href="#">التعرف على المزيد</a>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-buy"></i>
+                <h3>شراء منزل</h3>
+                <p>يمكنك من هنا ان  تشترى منزل يناسبك</p>
+                <a href="#">التعرف على المزيد</a>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-buy"></i>
+                <h3>أستاجار منزل</h3>
+                <p>يمكنك من هنا ان تستأجار منزل</p>
+                <a href="#">التعرف على المزيد</a>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-buy"></i>
+                <h3>رؤيه منازل</h3>
+                <p>يمكنك من هنا ان ترا المنازل المتاحه </p>
+                <a href="#">التعرف على المزيد</a>
+            </div>
+        </div>
+    </section>
+    <!-- Start Section Projects -->
+    <section class="Projects" id="Projects">
+        <h1>مشاريع الشركه</h1>
+        <div class="container">
+            <div class="box">
+                <div class="img">
+                    <img src="img/pro-img-2.avif" alt="">
+                </div>
+                <div class="info">
+                    <h4>92 ALLIUM PLACE, ORLANDO FL 32827</h4>
+                    <p>$ 590,693</p>
+                    <div class="icons">
+                        <div class="icon">
+                            <img src="img/Car.png" alt="">
+                            <p>1</p>
+                        </div>
+                        <div class="icon">
+                            <img src="img/Bathtub.png" alt="">
+                            <p>2</p>
+                        </div>
+                        <div class="icon">
+                            <img src="img/ArrowsOut.png" alt="">
+                            <p>2,096.00 ft</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-footer">
+                    <div class="img"><img src="img/persone.png" alt=""></div>
+                    <div class="icon">
+                        <i class="fa-solid fa-share-nodes"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="img/real-tow.avif" alt="">
+                </div>
+                <div class="info">
+                    <h4>92 ALLIUM PLACE, ORLANDO FL 32827</h4>
+                    <p>$ 590,693</p>
+                    <div class="icons">
+                        <div class="icon">
+                            <img src="img/Car.png" alt="">
+                            <p>1</p>
+                        </div>
+                        <div class="icon">
+                            <img src="img/Bathtub.png" alt="">
+                            <p>2</p>
+                        </div>
+                        <div class="icon">
+                            <img src="img/ArrowsOut.png" alt="">
+                            <p>2,096.00 ft</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-footer">
+                    <div class="img"><img src="img/pro-img-2.avif" alt=""></div>
+                    <div class="icon">
+                        <i class="fa-solid fa-share-nodes"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="img/real-three.avif" alt="">
+                </div>
+                <div class="info">
+                    <h4>92 ALLIUM PLACE, ORLANDO FL 32827</h4>
+                    <p>$ 590,693</p>
+                    <div class="icons">
+                        <div class="icon">
+                            <img src="img/Car.png" alt="">
+                            <p>1</p>
+                        </div>
+                        <div class="icon">
+                            <img src="img/Bathtub.png" alt="">
+                            <p>2</p>
+                        </div>
+                        <div class="icon">
+                            <img src="img/ArrowsOut.png" alt="">
+                            <p>2,096.00 ft</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-footer">
+                    <div class="img"><img src="img/persone.png" alt=""></div>
+                    <div class="icon">
+                        <i class="fa-solid fa-share-nodes"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="img/real-one.avif" alt="">
+                </div>
+                <div class="info">
+                    <h4>92 ALLIUM PLACE, ORLANDO FL 32827</h4>
+                    <p>$ 590,693</p>
+                    <div class="icons">
+                        <div class="icon">
+                            <img src="img/Car.png" alt="">
+                            <p>1</p>
+                        </div>
+                        <div class="icon">
+                            <img src="img/Bathtub.png" alt="">
+                            <p>2</p>
+                        </div>
+                        <div class="icon">
+                            <img src="img/ArrowsOut.png" alt="">
+                            <p>2,096.00 ft</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-footer">
+                    <div class="img"><img src="img/persone.png" alt=""></div>
+                    <div class="icon">
+                        <i class="fa-solid fa-share-nodes"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div id="btn-more">See More</div>
+    </section>
+    <!-- Start Gallery -->
+    <section class="gallery" id="gallery">
+        <h1>معرض ألصور</h1>
+        <p>معرض ألصور يحتوى على تفاصيل حول المنازل و ايضا يحتوى على مشاريع المؤسسه </p>
+        <div class="container">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="img"><img src="img/pro-img-2.avif" alt=""></div>
+                        <div class="hot">
+                            <p>Hot Offer</p>
+                        </div>
+                        <div class="btn">
+                            <a href="#">View Details</a>
+                        </div>
+                        <div class="icons">
+                            <div class="icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>Washington</p>
+                            </div>
+                            <div class="icon">
+                                <img src="img/ArrowsOut.png" alt="">
+                                <p>12000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img"><img src="img/real-one.avif" alt=""></div>
+                        <div class="btn">
+                            <a href="#">View Details</a>
+                        </div>
+                        <div class="icons">
+                            <div class="icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>Washington</p>
+                            </div>
+                            <div class="icon">
+                                <img src="img/ArrowsOut.png" alt="">
+                                <p>12000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img"><img src="img/real-tow.avif" alt=""></div>
+                        <div class="hot">
+                            <p>Hot Offer</p>
+                        </div>
+                        <div class="btn">
+                            <a href="#">View Details</a>
+                        </div>
+                        <div class="icons">
+                            <div class="icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>Washington</p>
+                            </div>
+                            <div class="icon">
+                                <img src="img/ArrowsOut.png" alt="">
+                                <p>12000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img"><img src="img/real-three.avif" alt=""></div>
+                        <div class="btn">
+                            <a href="#">View Details</a>
+                        </div>
+                        <div class="icons">
+                            <div class="icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>Washington</p>
+                            </div>
+                            <div class="icon">
+                                <img src="img/ArrowsOut.png" alt="">
+                                <p>12000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img"><img src="img//real-five.avif" alt=""></div>
+                        <div class="hot">
+                            <p>Hot Offer</p>
+                        </div>
+                        <div class="btn">
+                            <a href="#">View Details</a>
+                        </div>
+                        <div class="icons">
+                            <div class="icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>Washington</p>
+                            </div>
+                            <div class="icon">
+                                <img src="img/ArrowsOut.png" alt="">
+                                <p>12000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img"><img src="img/pro-img-1.avif" alt=""></div>
+                        <div class="hot">
+                            <p>Hot Offer</p>
+                        </div>
+                        <div class="btn">
+                            <a href="#">View Details</a>
+                        </div>
+                        <div class="icons">
+                            <div class="icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>Washington</p>
+                            </div>
+                            <div class="icon">
+                                <img src="img/ArrowsOut.png" alt="">
+                                <p>12000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Start Search for you -->
+    <section class="search" id="search">
+        <div class="container">
+            <h1>دعنا نبحث لك عن افضل مكان يناسبك</h1>
+            <p>بامكانك التواصل معنا و سوف نوفر لك مكان يناسب زوقك الراقى</p>
+            <div class="btn">
+                <a href="">تواصل معنا</a>
+            </div>
+        </div>
+    </section>
+    <!-- Start Footer -->
+    <footer>
+        <div class="container">
+            <div class="box">
+                <div class="content">
+                    <div class="img"><img src="img/logo-footer.png" alt=""></div>
+                    <h1>Contact Us</h1>
+                    <p>Call: +0247586067543</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos amet dolorem ipsam!</p>
+                    <p>Email: Explane@gmail.com</p>
+                    <div class="icons">
+                        <a href="https://www.facebook.com/profile.php?id=100012125986519"> <i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/ah_m_e_d_magdy?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=%2B201116725708&text&type=phone_number&app_absent=0"> <i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/ahmed-magdy-a974a0244"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <h1>الخدمات</h1>
+                <ul>
+                    <li>ألرئيسيه</li>
+                    <li>الاسعار</li>
+                    <li>التواصل</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h1>الشركه</h1>
+                <ul>
+                    <li>عن الشركه</li>
+                    <li>تواصل معنا</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h1>Team and Policies</h1>
+                <ul>
+                    <li>Team of Servies</li>
+                    <li>Security</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Button Up -->
+    <button class="botton show" id="goup">Up</button>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="style.js"></script>
+</body>
+</html>
